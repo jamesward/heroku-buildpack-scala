@@ -4,14 +4,7 @@
 # fail fast
 set -e
 
-#export PATH=/app/bin:$PATH
 echo $PATH
-
-find /app -name node
-
-ls -al /app/tmp/cache/node
-
-chmod +x /app/tmp/cache/node
 
 stylus --help
 
