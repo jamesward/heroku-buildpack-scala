@@ -7,7 +7,8 @@ set -e
 export PATH=/app/node_modules/stylus/bin:$PATH
 echo $PATH
 
-ls /app/node_modules/stylus/bin
+pwd
+find .
 
 BP_DIR=$(cd $(dirname $0)/..; pwd) # absolute path
 BIN_DIR=$BP_DIR/bin
