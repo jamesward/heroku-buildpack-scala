@@ -7,6 +7,7 @@ set -e
 export PATH=/app/node_modules/stylus/bin:$PATH
 echo $PATH
 
+
 BP_DIR=$(cd $(dirname $0)/..; pwd) # absolute path
 BIN_DIR=$BP_DIR/bin
 OPT_DIR=$BP_DIR/opt
@@ -123,6 +124,10 @@ mkdir -p "$SBT_USER_HOME/.sbt/plugins"
 cp -p $OPT_DIR/$HEROKU_PLUGIN $SBT_USER_HOME/.sbt/plugins/$HEROKU_PLUGIN
 
 # build app
+echo $PATH
+
+stylus --help
+
 echo "-----> Running: sbt $SBT_TASKS"
 test -e "$SBT_BINDIR"/sbt.boot.properties && PROPS_OPTION="-Dsbt.boot.properties=$SBT_BINDIR/sbt.boot.properties"
 
