@@ -4,6 +4,7 @@
 # fail fast
 set -e
 
+export PATH=/app/node_modules/stylus/bin:$PATH
 echo $PATH
 
 BP_DIR=$(cd $(dirname $0)/..; pwd) # absolute path
