@@ -6,7 +6,7 @@ set -e
 
 echo $PATH
 
-stylus --help
+stylus --help &
 
 BP_DIR=$(cd $(dirname $0)/..; pwd) # absolute path
 BIN_DIR=$BP_DIR/bin
