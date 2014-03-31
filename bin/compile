@@ -7,6 +7,8 @@ set -e
 #export PATH=/app/bin:$PATH
 echo $PATH
 
+find /app -name node
+
 stylus --help
 
 BP_DIR=$(cd $(dirname $0)/..; pwd) # absolute path
